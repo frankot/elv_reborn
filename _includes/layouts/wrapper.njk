@@ -15,6 +15,7 @@
     <script src="/js/alpine.js?v={% version %}"></script> 
   </head>
   <body>
+    {% include "components/nav.njk" %} 
     {% block content %}
       {{ content | safe }}
     {% endblock %}
